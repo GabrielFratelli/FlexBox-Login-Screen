@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+
+:root {
+  --background: #171923cc;
+  --input: #cbd5e0;
+  --placeholder: #b2f5ea;
+  --button: #285e61;
+  --white: #fff;
+  --text-button: #b2f5ea;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.imagem {
+  flex: 1;
+  background-image: url(/src/assets/img/barbearia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formulario h1 {
+  font-size: 64px;
+  color: var(--white);
+  font-weight: 100;
+  width: 40%;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario form .input {
+  padding: 32px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  background: var(--input);
+  color: var(--background);
+  border: 0px solid;
+}
+
+.formulario form .input::placeholder {
+  color: var(--placeholder);
+}
+
+.formulario form button {
+  background: var(--button);
+  color: var(--placeholder);
+  padding: 32px 16px;
+  font-size: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 0px solid;
+  transition: all 0.5s;
+}
+
+.formulario form button:hover {
+  opacity: 0.2;
+}
+
+.formulario form input#email {
+  margin-bottom: 32px;
+}
+
+.formulario form input#password {
+  margin-bottom: 32px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
