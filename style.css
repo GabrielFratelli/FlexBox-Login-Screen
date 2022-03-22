@@ -103,4 +103,9 @@ body {
 a {
   color: var(--white);
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
 }
